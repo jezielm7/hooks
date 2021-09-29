@@ -26,32 +26,32 @@
   2. Componente atualizado. (re-renderizado)
   3. Componente desmontado.
 
-  Se existe valor dentro do useEffect, ele deve ser 
-  passado no array para obter o valor atualizado... 
+    Se existe valor dentro do useEffect, ele deve ser 
+    passado no array para obter o valor atualizado... 
 
-  Não se pode executar ações quando o componente
-  for desmontado se o array de deps possuir valor.
+    Não se pode executar ações quando o componente
+    for desmontado se o array de deps possuir valor.
 
-  Se existir uma função assíncrona dentro do 
-  useEffect ela deve ser chamada logo em seguida.
+    Se existir uma função assíncrona dentro do 
+    useEffect ela deve ser chamada logo em seguida.
 
 ## Memoização (useMemo, useCallback)
   - Problemas que os hooks resolvem.
 
-  1. Renderização desnecessária dos filhos.
-  2. Operações pesadas sendo re-executadas.
-  3. Salvar resultados de operações custosas.
+    1. Renderização desnecessária dos filhos.
+    2. Operações pesadas sendo re-executadas.
+    3. Salvar resultados de operações custosas.
 
 
   - Problemas do uso desnecessário.
-  * Também há um custo para executar esses hooks.
+    1. Também há um custo para executar esses hooks.
 
 
   - Regras para o uso e aplicação correta dos hooks.
 
-  1. Se o valor não for atualizar algum state ou as props,
-  é recomendado que ele seja definido fora do componente...
+    1. Se o valor não for atualizar algum state ou as props,
+    é recomendado que ele seja definido fora do componente...
 
-  2. Se o valor ou função não tem dependência de um cálculo 
-  ou de um processamento pesado e nem será passada como prop, 
-  então ela deve ser definida como valor ou função normais.
+    2. Se o valor ou função não tem dependência de um cálculo 
+    ou de um processamento pesado e nem será passada como prop, 
+    então ela deve ser definida como valor ou função normais.
