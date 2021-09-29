@@ -45,7 +45,7 @@
 
   - Problemas do uso desnecessário.
 ```bash
-    1. Também há um custo para executar esses hooks.
+    Também há um custo para executar esses hooks.
 ```
 
   - Regras para o uso e aplicação correta dos hooks.
