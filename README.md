@@ -37,21 +37,23 @@
 
 ## Memoização (useMemo, useCallback)
   - Problemas que os hooks resolvem.
-
+```bash
     1. Renderização desnecessária dos filhos.
     2. Operações pesadas sendo re-executadas.
     3. Salvar resultados de operações custosas.
-
+```
 
   - Problemas do uso desnecessário.
+```bash
     1. Também há um custo para executar esses hooks.
-
+```
 
   - Regras para o uso e aplicação correta dos hooks.
-
+```bash
     1. Se o valor não for atualizar algum state ou as props,
     é recomendado que ele seja definido fora do componente...
 
     2. Se o valor ou função não tem dependência de um cálculo 
     ou de um processamento pesado e nem será passada como prop, 
     então ela deve ser definida como valor ou função normais.
+```
